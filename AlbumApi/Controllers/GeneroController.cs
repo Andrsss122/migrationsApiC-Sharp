@@ -21,14 +21,14 @@ namespace AlbumApi.Controllers
         }
 
         // GET: api/Genero
-        [HttpGet("{GetAll}")]
+        [HttpGet("GetAll")]
         public async Task<ActionResult<IEnumerable<Genero>>> Getgenero()
         {
             return await _context.genero.ToListAsync();
         }
 
         // GET: api/Genero/5
-        [HttpGet("{GetById}")]
+        [HttpGet("GetById")]
         public async Task<ActionResult<Genero>> GetGenero(int id)
         {
             var genero = await _context.genero.FindAsync(id);
@@ -44,7 +44,7 @@ namespace AlbumApi.Controllers
         // PUT: api/Genero/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{Update}")]
+        [HttpPut("Update")]
         public async Task<IActionResult> PutGenero(int id, Genero genero)
         {
             if (id != genero.IdGenero)
@@ -76,7 +76,7 @@ namespace AlbumApi.Controllers
         // POST: api/Genero
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost("{Create}")]
+        [HttpPost("Create")]
         public async Task<ActionResult<Genero>> PostGenero(Genero genero)
         {
             _context.genero.Add(genero);
@@ -86,7 +86,7 @@ namespace AlbumApi.Controllers
         }
 
         // DELETE: api/Genero/5
-        [HttpDelete("{Delete}")]
+        [HttpDelete("Delete")]
         public async Task<ActionResult<Genero>> DeleteGenero(int id)
         {
             var genero = await _context.genero.FindAsync(id);

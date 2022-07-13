@@ -21,14 +21,14 @@ namespace AlbumApi.Controllers
         }
 
         // GET: api/Albums
-        [HttpGet("{GetAll}")]
+        [HttpGet("GetAll")]
         public async Task<ActionResult<IEnumerable<Album>>> Getalbum()
         {
             return await _context.album.ToListAsync();
         }
 
         // GET: api/Albums/5
-        [HttpGet("{GetById}")]
+        [HttpGet("GetById")]
         public async Task<ActionResult<Album>> GetAlbum(int id)
         {
             var album = await _context.album.FindAsync(id);
@@ -44,7 +44,7 @@ namespace AlbumApi.Controllers
         // PUT: api/Albums/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPut("{Update}")]
+        [HttpPut("Update")]
         public async Task<IActionResult> PutAlbum(int id, Album album)
         {
             if (id != album.IdAlbum)
@@ -76,7 +76,7 @@ namespace AlbumApi.Controllers
         // POST: api/Albums
         // To protect from overposting attacks, enable the specific properties you want to bind to, for
         // more details, see https://go.microsoft.com/fwlink/?linkid=2123754.
-        [HttpPost("{Create}")]
+        [HttpPost("Create")]
         public async Task<ActionResult<Album>> PostAlbum(Album album)
         {
             _context.album.Add(album);
@@ -86,7 +86,7 @@ namespace AlbumApi.Controllers
         }
 
         // DELETE: api/Albums/5
-        [HttpDelete("{Delete}")]
+        [HttpDelete("Delete")]
         public async Task<ActionResult<Album>> DeleteAlbum(int id)
         {
             var album = await _context.album.FindAsync(id);
