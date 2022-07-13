@@ -7,6 +7,8 @@ namespace AlbumApi.Data
         [Key]
         public int IdArtista { get; set; }
 
+        [Required(ErrorMessage = "Escibi algo men")]
         public string Nombre { get; set; }
+
     }
 }

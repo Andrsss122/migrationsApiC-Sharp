@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\WebApiCatalogo\\AlbumApi\\AlbumApi\\AlbumApi.csproj": {}
+    "C:\\Users\\vacuna\\source\\repos\\migrationsApiC-Sharp\\AlbumApi\\AlbumApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\WebApiCatalogo\\AlbumApi\\AlbumApi\\AlbumApi.csproj": {
+    "C:\\Users\\vacuna\\source\\repos\\migrationsApiC-Sharp\\AlbumApi\\AlbumApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\WebApiCatalogo\\AlbumApi\\AlbumApi\\AlbumApi.csproj",
+        "projectUniqueName": "C:\\Users\\vacuna\\source\\repos\\migrationsApiC-Sharp\\AlbumApi\\AlbumApi.csproj",
         "projectName": "AlbumApi",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\WebApiCatalogo\\AlbumApi\\AlbumApi\\AlbumApi.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\WebApiCatalogo\\AlbumApi\\AlbumApi\\obj\\",
+        "projectPath": "C:\\Users\\vacuna\\source\\repos\\migrationsApiC-Sharp\\AlbumApi\\AlbumApi.csproj",
+        "packagesPath": "C:\\Users\\vacuna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vacuna\\source\\repos\\migrationsApiC-Sharp\\AlbumApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vacuna\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,15 +48,27 @@
               "target": "Package",
               "version": "[3.1.26, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.25, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.26, )"
+              "version": "[3.1.25, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.22, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
             }
           },
           "imports": [
